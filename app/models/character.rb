@@ -1,3 +1,9 @@
-class Character < ActiveRecord::Base
+
+class Character < ActiveRecord
+    belongs_to :actor
+    belongs_to :show
   
-end
+    def say_that_thing_you_say
+      "#{name} always says: #{catchphrase}"
+    end
+  end

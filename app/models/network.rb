@@ -1,3 +1,3 @@
-class Network < ActiveRecord::Base
-  
-end
+class Network < ActiveRecord
+    has_many :shows
+  end
